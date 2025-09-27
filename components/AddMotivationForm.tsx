@@ -23,7 +23,7 @@ export default function AddMotivationForm() {
         placeholder="Add motivation..."
         className="border rounded p-2 flex-1"
       />
-      <button type="submit" className="bg-blue-500 text-white px-4 rounded">
+      <button type="submit" className="bg-blue-500 text-white px-4 rounded cursor-pointer">
         Add
       </button>
     </form>
