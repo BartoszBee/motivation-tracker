@@ -18,10 +18,12 @@ export default function MotivationList() {
             key={m.id}
             className="flex justify-between items-center border p-2 rounded"
           >
-            <span>{m.text}</span>
+            <div className="max-w-xs whitespace-normal break-words">
+  {m.text}
+</div>
             <button
               onClick={() => removeMotivation(m.id)}
-              className="text-red-500"
+              className="text-red-500 cursor-pointer"
             >
               Remove
             </button>
@@ -30,7 +32,7 @@ export default function MotivationList() {
       </ul>
       <button
         onClick={clearMotivations}
-        className="bg-red-500 text-white px-4 py-2 mt-4 rounded"
+        className="bg-red-500 text-white px-4 py-2 mt-4 rounded cursor-pointer"
       >
         Clear All
       </button>
